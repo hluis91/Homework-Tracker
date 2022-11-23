@@ -1,60 +1,60 @@
 {
-    "classAssignements": [
+    "classAssignments": [
         {
             "id": 1,
             "classSubject": "Science",
-            "homeworkAssignmentTitle": "Precipitation Note Catcher",
+            "title": "Precipitation Note Catcher",
             "dueDate": "12/01/2022",
-            "homeworkInstructions": "Turn in on google classroom"
+            "instructions": "Turn in on google classroom"
         },
         {
             "id": 2,
             "classSubject": "Art",
-            "homeworkAssignmentTitle": "Baroque Art Reasearch Activity",
+            "title": "Baroque Art Reasearch Activity",
             "dueDate": "12/01/2022",
-            "homeworkInstructions": "Cite 3 sources"
+            "instructions": "Cite 3 sources"
         },
         {
             "id": 3,
             "classSubject": "ELA",
-            "homeworkAssignmentTitle": "Identify Theme",
+            "title": "Identify Theme",
             "dueDate": "12/03/2022",
-            "homeworkInstructions": "Turn in on google classroom"
+            "instructions": "Turn in on google classroom"
         },
         {
             "id": 4,
             "classSubject": "History",
-            "homeworkAssignmentTitle": "Ancient Civilizations",
+            "title": "Ancient Civilizations",
             "dueDate": "12/05/2022",
-            "homeworkInstructions": "N/A"
+            "instructions": "N/A"
         },
         {
             "id": 5,
             "classSubject": "Math",
-            "homeworkAssignmentTitle": "Geometry Practice Problems",
+            "title": "Geometry Practice Problems",
             "dueDate": "12/03/2022",
-            "homeworkInstructions": "Show all work for each problem"
+            "instructions": "Show all work for each problem"
         },
         {
             "id": 6,
             "classSubject": "P.E.",
-            "homeworkAssignmentTitle": "Independent Home Exercises",
+            "title": "Independent Home Exercises",
             "dueDate": "12/02/2022",
-            "homeworkInstructions": "Show all work for each problem"
+            "instructions": "Show all work for each problem"
         },
         {
             "id": 7,
             "classSubject": "Band",
-            "homeworkAssignmentTitle": "Independent Instrument Practice",
+            "title": "Independent Instrument Practice",
             "dueDate": "12/04/2022",
-            "homeworkInstructions": "Make sure to practice"
+            "instructions": "Make sure to practice"
         },
         {
             "id": 8,
             "classSubject": "Homeroom",
-            "homeworkAssignmentTitle": "Reading Practice",
+            "title": "Reading Practice",
             "dueDate": "12/02/2022",
-            "homeworkInstructions": "Read chapter 3"
+            "instructions": "Read chapter 3"
         }
     ]
 }
