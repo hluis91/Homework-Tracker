@@ -4,6 +4,7 @@ const form = document.querySelector(".add-hw-tasks")
 form.addEventListener('submit', addAssignment)
 
 
+
 //GET request for db.json
 function getAssignments(){
     fetch("http://localhost:3000/classAssignments")
@@ -55,11 +56,7 @@ function addAssignment(event){
       })
       .then(response => response.json())
       .then(response => showAssignment(response))
-     
-      classSubject.value = ""
-      title.value = ""
-      dueDate.value = ""
-      instructions.value = ""
+      form.reset()
 }
 
 
