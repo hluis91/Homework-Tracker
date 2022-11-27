@@ -4,7 +4,8 @@ function getAssignments(){
     .then(response => response.json())
     .then(data => data.forEach(assignment => showAssignment(assignment)))
 }
-
+//Invoke Function getAssignments to show db.json objects on the DOM
+getAssignments()
 
 
 
