@@ -1,3 +1,5 @@
+//Create a form variable to select the form id
+const form = document.querySelector(".add-hw-tasks")
 
 
 //GET request for db.json
@@ -32,8 +34,7 @@ function showAssignment(assignment){
 }
 
 //Creating the function addAssigment to create and POST homework assignments.
-function addAssigment(){
-  
+function addAssigment(event){
 }
 
 
