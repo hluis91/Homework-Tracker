@@ -4,7 +4,6 @@ const form = document.querySelector(".add-hw-tasks")
 form.addEventListener('submit', addAssignment)
 
 
-
 //GET request for db.json
 function getAssignments(){
     fetch("http://localhost:3000/classAssignments")
@@ -38,6 +37,8 @@ function showAssignment(assignment){
 
 //Creating the function addAssigment to create and POST homework assignments.
 function addAssigment(event){
+  event.preventDefault()
+  console.log("event", event)
 }
 
 
