@@ -3,8 +3,13 @@ function showAssignment(){
     const div = document.createElement("div")
     div.classList.add("card")
     const header = document.createElement("h3")
+    header.textContent = "Homework Assignment"
     const subject = document.createElement("li")
+    subject.textContent = `Subject: ${assignment.classSubject}`
     const titles = document.createElement("li")
+    titles.textContent = `Title: ${assignment.title}`
     const date = document.createElement("li")
+    date.textContent = `Date: ${assignment.dueDate}`
     const instruction = document.createElement("li")
+    instruction.textContent = `Instructions: ${assignment.instructions}`
 }
