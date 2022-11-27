@@ -42,6 +42,20 @@ function addAssigment(event){
 
   const [classSubject, title, dueDate, instructions] = event.target
 
+  fetch("http://localhost:3000/classAssignments", {
+    method: "POST",
+    headers: {
+      "content-type": "application/json"
+    },
+    body: JSON.stringify({
+      classSubject: classSubject.value,
+      title: title.value,
+      dueDate: dueDate.value,
+      instructions: instructions.value
+    })
+  })
+  .then(response => response.json())
+  .then(response => showAssignment(response))
 }
 
 
