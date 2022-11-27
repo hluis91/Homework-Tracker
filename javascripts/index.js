@@ -36,26 +36,31 @@ function showAssignment(assignment){
 }
 
 //Creating the function addAssigment to create and POST homework assignments.
-function addAssigment(event){
+function addAssignment(event){
   event.preventDefault()
   // console.log("event", event)
-
+   
   const [classSubject, title, dueDate, instructions] = event.target
-
   fetch("http://localhost:3000/classAssignments", {
-    method: "POST",
-    headers: {
-      "content-type": "application/json"
-    },
-    body: JSON.stringify({
-      classSubject: classSubject.value,
-      title: title.value,
-      dueDate: dueDate.value,
-      instructions: instructions.value
-    })
-  })
-  .then(response => response.json())
-  .then(response => showAssignment(response))
+        method: "POST",
+        headers: {
+          "content-type": "application/json"
+        },
+        body: JSON.stringify({
+          classSubject: classSubject.value,
+          title: title.value,
+          dueDate: dueDate.value,
+          instructions: instructions.value
+        })
+      })
+      .then(response => response.json())
+      .then(response => showAssignment(response))
+     
+      classSubject.value = ""
+      title.value = ""
+      dueDate.value = ""
+      instructions.value = ""
 }
+
 
 
