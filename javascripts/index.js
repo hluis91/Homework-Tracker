@@ -13,5 +13,5 @@ function showAssignment(){
     const instruction = document.createElement("li")
     instruction.textContent = `Instructions: ${assignment.instructions}`
     div.append(header, subject, titles, date, instruction)
-
+    assignmentCollection.append(div)
 }
