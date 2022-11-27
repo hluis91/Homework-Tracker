@@ -1,5 +1,8 @@
 //Create a form variable to select the form id
 const form = document.querySelector(".add-hw-tasks")
+//Add a 'submit' eventListener to the form variable and pass addAssignment as a paramter
+form.addEventListener('submit', addAssignment)
+
 
 
 //GET request for db.json
