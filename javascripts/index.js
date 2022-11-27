@@ -1,3 +1,8 @@
+
+
+
+// This function will create a card that will have the information of each homework assignment that is in the db.json.
+//It will also help with creating new assignments added to db.json
 function showAssignment(){
     const assignmentCollection = document.getElementById("task-collection")
     const div = document.createElement("div")
