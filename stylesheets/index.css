@@ -1,0 +1,14 @@
+.card {
+    text-align: center;
+    border: green solid 1px;
+    padding: 1rem;
+    width: 15rem;
+    height: 20rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #664be0
+  }
+  
+  #toy-collection {
+    margin: 2rem;
+  }
