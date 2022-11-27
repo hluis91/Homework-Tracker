@@ -1,3 +1,8 @@
+function getAssignments(){
+    fetch("http://localhost:3000/classAssignments")
+    .then(response => response.json())
+    .then(data => data.forEach(assignment => showAssignment(assignment)))
+}
 
 
 
