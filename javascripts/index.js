@@ -38,7 +38,10 @@ function showAssignment(assignment){
 //Creating the function addAssigment to create and POST homework assignments.
 function addAssigment(event){
   event.preventDefault()
-  console.log("event", event)
+  // console.log("event", event)
+
+  const [classSubject, title, dueDate, instructions] = event.target
+
 }
 
 
