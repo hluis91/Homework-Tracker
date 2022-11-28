@@ -1,8 +1,7 @@
 //Create a form variable to select the form id
 const form = document.querySelector(".add-hw-tasks")
-//Add a 'submit' eventListener to the form variable and pass addAssignment as a paramter
+//Add a 'submit' eventListener to the form variable and pass addAssignment as a parameter
 form.addEventListener('submit', addAssignment)
-
 
 //GET request for db.json
 function getAssignments(){
@@ -16,7 +15,7 @@ getAssignments()
 
 
 // This function will create a card that will have the information of each homework assignment that is in the db.json.
-//It will also help with creating new assignments added to db.json
+//It will also help with creating new assignments added to db.json. It will also delete created assignments.
 function showAssignment(assignment){
     const assignmentCollection = document.getElementById("task-collection")
     //Creating card for Assignments
@@ -36,8 +35,13 @@ function showAssignment(assignment){
     button.classList.add("delete-btn")
     button.textContent = "Delete Assignment"
     button.id = assignment.id
-    //Event listener to delete card.
-    button.addEventListener('click', () => div.remove())
+    //Event listener to delete card. DELETE request to remove objects from db.json.
+    button.addEventListener('click', () => {
+      fetch(`http://localhost:3000/classAssignments/${assignment.id}`, {
+        method: 'DELETE'
+      })
+      .then(() => div.remove())
+    })
     //Append variables div
     div.append(header, subject, titles, date, instruction, button)
     //Append div to DOM
@@ -48,7 +52,6 @@ function showAssignment(assignment){
 function addAssignment(event){
   event.preventDefault()
   // console.log("event", event)
-   
   const [classSubject, title, dueDate, instructions] = event.target
   fetch("http://localhost:3000/classAssignments", {
         method: "POST",
