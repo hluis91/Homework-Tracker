@@ -32,7 +32,11 @@ function showAssignment(assignment){
     date.textContent = `Date: ${assignment.dueDate}`
     const instruction = document.createElement("li")
     instruction.textContent = `Instructions: ${assignment.instructions}`
-    div.append(header, subject, titles, date, instruction)
+    const button = document.createElement("button")
+    button.classList.add("delete-btn")
+    button.textContent = "Delete Assignment"
+    button.id = assignment.id
+    div.append(header, subject, titles, date, instruction, button)
     assignmentCollection.append(div)
 }
 
