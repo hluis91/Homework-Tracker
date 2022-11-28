@@ -1,8 +1,3 @@
-//Create a form variable to select the form id
-const form = document.querySelector(".add-hw-tasks")
-//Add a 'submit' eventListener to the form variable and pass addAssignment as a parameter
-form.addEventListener('submit', addAssignment)
-
 // This function will create a card that will have the information of each homework assignment that is in the db.json.
 //It will also help with creating new assignments added to db.json. It will also delete created assignments.
 function showAssignment(assignment){
@@ -65,6 +60,11 @@ function addAssignment(event){
       .then(response => showAssignment(response))
       form.reset()
 }
+
+//Create a form variable to select the form id
+const form = document.querySelector(".add-hw-tasks")
+//Add a 'submit' eventListener to the form variable and pass addAssignment as a parameter
+form.addEventListener('submit', addAssignment)
 
 //Function to delete cards from DOM as well as an alert message for deleting the card.
 function deleteAssignment(ids) {
