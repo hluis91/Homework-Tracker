@@ -4,7 +4,6 @@ const form = document.querySelector(".add-hw-tasks")
 form.addEventListener('submit', addAssignment)
 
 
-
 //GET request for db.json
 function getAssignments(){
     fetch("http://localhost:3000/classAssignments")
@@ -20,6 +19,7 @@ getAssignments()
 //It will also help with creating new assignments added to db.json
 function showAssignment(assignment){
     const assignmentCollection = document.getElementById("task-collection")
+    //Creating card for Assignments
     const div = document.createElement("div")
     div.classList.add("card")
     const header = document.createElement("h3")
@@ -36,7 +36,11 @@ function showAssignment(assignment){
     button.classList.add("delete-btn")
     button.textContent = "Delete Assignment"
     button.id = assignment.id
+    //Event listener to delete card.
+    button.addEventListener('click', () => div.remove())
+    //Append variables div
     div.append(header, subject, titles, date, instruction, button)
+    //Append div to DOM
     assignmentCollection.append(div)
 }
 
