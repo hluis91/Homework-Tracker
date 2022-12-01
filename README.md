@@ -7,6 +7,7 @@
 * Instructions for the specific assignment.
 * A delete button for the card.
 
+![Screenshot 2022-11-30 141203](https://user-images.githubusercontent.com/100493586/204949231-4264a071-2e1d-4e6e-8020-e40cdb7b1943.png)
 
 #
 ### First, copy this repository into your terminal. In order to use this application you must globally install a j-son server. If you do not have that installed, here is the command that you can put in your terminal:
